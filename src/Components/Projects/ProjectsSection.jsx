@@ -172,7 +172,7 @@ const ProjectsSection = () => (
   <section id="projects" className="py-24 bg-[#24282c]">
     <div className="container mx-auto px-5">
       <motion.h2
-        className="text-3xl md:text-4xl font-bold text-blue-400 mb-12 text-center"
+        className="text-4xl md:text-5xl font-bold text-white mb-5 text-center"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
@@ -187,7 +187,8 @@ const ProjectsSection = () => (
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
       >
-        Here are the projects that i build for amazing web experiences
+         Explore a showcase of real-world projects.
+  Each project reflects my commitment to user experience and building web apps that actually matter.
       </motion.p>
       {projects.map((project, i) => (
         <Project

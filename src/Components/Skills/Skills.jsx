@@ -107,7 +107,7 @@ const Skills = () => (
     <div className="container mx-auto px-5">
       {/* Animated Section Heading */}
       <motion.h2
-        className="text-3xl md:text-4xl font-bold mb-4 text-center"
+        className="text-4xl md:text-5xl font-bold text-white mb-5 text-center"
         variants={groupBoxVariant}
         initial="hidden"
         whileInView="visible"
@@ -116,12 +116,13 @@ const Skills = () => (
       </motion.h2>
       {/* Animated Section Paragraph */}
       <motion.p
-        className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center mb-16"
+       className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center mb-16"
         variants={groupBoxVariant}
         initial="hidden"
         whileInView="visible"
       >
-        Here are the technologies I work with to create amazing web experiences
+      These are the core technologies I use to build reliable, high-impact web apps.
+  Always learning, always leveling up.
       </motion.p>
 
       {/* Animate each group card */}
