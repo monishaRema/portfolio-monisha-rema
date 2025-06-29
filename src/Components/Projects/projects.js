@@ -1,0 +1,106 @@
+const projects = [
+  {
+    title: "Planto",
+    image: "https://i.ibb.co/20VbwG94/Planto.png",
+    tagline: "Your personal plant care assistant.",
+    description:
+      "A full-stack, mobile-responsive plant management app. Log and track watering, fertilizing, and health for your houseplants. Add photos, monitor growth, and get reminders—everything is organized, visual, and user-authenticated.",
+    features: [
+      "Add/manage plants with photos, nicknames, and preferences",
+      "Track care tasks: watering, fertilizing, pruning, repotting",
+      "Photo journaling and health notes",
+      "Personalized reminders and task logging",
+      "User authentication (Firebase)",
+      "Mobile-first, fully responsive design",
+      "SEO optimized (React Helmet)"
+    ],
+    tech: [
+      "React", "React Router", "Tailwind CSS", "DaisyUI", "Framer Motion",
+      "React Toastify", "SweetAlert2", "React Tooltip", "date-fns"
+    ],
+    backend: [
+      "Node.js", "Express.js", "MongoDB", "JWT", "Firebase"
+    ],
+    github:{
+          frontend:"https://github.com/monishaRema/planto",
+          backend: "https://github.com/monishaRema/Planto-server"
+
+    },
+    live: "https://green-3f4f3.web.app/"
+  },
+  {
+    title: "Book Case",
+    image: "https://i.ibb.co/676qF7Tg/Bookcase.png",
+    tagline: "Your digital bookshelf—organized, interactive, and social.",
+    description:
+      "A community-driven web app for tracking, reviewing, and organizing your reading journey. Add books, update status, write reviews, upvote titles, and see your progress—all in a social, interactive UI.",
+    features: [
+      "Add and organize books by title, author, category, and status",
+      "Update reading status and track progress",
+      "Review books, view and upvote trending titles",
+      "Visualize habits with progress charts",
+      "Comprehensive, live dashboard",
+      "Secure login (Firebase Auth, JWT)",
+      "Fully responsive, real-time UI"
+    ],
+    tech: [
+      "React", "Tailwind CSS", "DaisyUI", "Framer Motion", "Recharts", "React Router",
+      "React Toastify", "SweetAlert2", "Lottie React", "React Tooltip"
+    ],
+    backend: [
+      "Node.js", "Express.js", "CORS", "MongoDB", "Firebase Auth", "JWT"
+    ],
+    github: {
+      frontend: "https://github.com/monishaRema/bookcase-client",
+      backend: "https://github.com/monishaRema/Bookcase-Server"
+    },
+    live: "https://book-case-92d50.web.app/"
+  },
+  {
+    title: "JobTrack",
+    image: "https://i.ibb.co/qMgtNJTP/Jobtrack.png",
+    tagline: "All your job applications, one dashboard.",
+    description:
+      "A modern job search platform aggregating listings from multiple companies. Check requirements, filter by eligibility, and apply directly—all in a clean, responsive UI.",
+    features: [
+      "Aggregated job listings from multiple companies",
+      "Detailed job descriptions and qualification checks",
+      "Direct links to official job pages",
+      "Responsive, mobile-first design",
+      "GSAP-powered UI animations",
+      "Instant feedback with React Toastify"
+    ],
+    tech: [
+      "React", "React Router", "Tailwind CSS", "GSAP", "React Toastify", "date-fns", "Helmet React"
+    ],
+    backend: [
+      "Firebase (Auth & Hosting)"
+    ],
+    github: "https://github.com/monishaRema/job-track",
+    live: "https://jobtrack-rema.surge.sh/"
+  },
+  {
+    title: "Phudu - Medical Appointment Booking",
+    image: "https://i.ibb.co/fzqft58S/Phudu.jpg",
+    tagline: "Your digital medical front desk—anytime, anywhere.",
+    description:
+      "A modern React web app for booking and managing doctor appointments. Fully client-side with local storage. Schedule, update, and view appointments on a clean, interactive dashboard.",
+    features: [
+      "Book, view, edit, and cancel appointments",
+      "Calendar dashboard for all bookings",
+      "View appointment details (doctor, specialty, time)",
+      "Visual charts of appointment stats",
+      "Instant toasts and alerts",
+      "Light/dark mode, mobile-first design",
+      "Data persists via local storage"
+    ],
+    tech: [
+      "React", "React Router", "Tailwind CSS", "DaisyUI", "React Icons", "Chart.js", "Local Storage"
+    ],
+    backend: [],
+    github: "https://github.com/monishaRema/Phudu",
+    live: "https://fanatical-bun.surge.sh/"
+  }
+];
+
+export default projects;
