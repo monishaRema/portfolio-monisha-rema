@@ -64,7 +64,9 @@ const Portfolio = () => {
       <ProjectsSection></ProjectsSection>
 
       {/* Contact Section */}
+
       <Contact></Contact>
+
       <Footer></Footer>
     </>
   );

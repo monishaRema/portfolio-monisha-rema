@@ -10,11 +10,11 @@ const AboutMe = () => (
       <div className="flex flex-col md:flex-row items-center justify-center gap-12">
         {/* Left: Profile Image */}
         <motion.div
-          className="rounded-2xl overflow-hidden border-8 border-[#272870b6] shadow-2xl bg-[#181f2c]"
+          className="min-w-[300px] md:min-w-[350px] rounded-2xl overflow-hidden border-8 border-[#272870b6] shadow-2xl bg-[#181f2c]"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
           style={{
             borderRadius: "69% 31% 46% 54% / 57% 63% 37% 43% ",
           }}
@@ -22,7 +22,7 @@ const AboutMe = () => (
           <img
             src="https://avatars.githubusercontent.com/u/188803446?s=400&u=8584af5a2786ee6db4d4d16678b95fa00111fcae&v=4" // UPDATE to your photo path!
             alt="Monisha Rema"
-            className="w-[330px] h-[410px] object-cover"
+            className="w-full h-[410px] object-cover"
             loading="lazy"
           />
         </motion.div>
@@ -33,14 +33,14 @@ const AboutMe = () => (
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
+          viewport={{ once: false }}
         >
           <motion.h2
             className="text-4xl md:text-5xl font-bold text-white mb-5"
             initial={{ opacity: 0, y: -30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: "easeOut" }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
           >
             About Me
              <div className="w-45 h-1 bg-gradient-to-r from-blue-700 to-green-600 mt-2 rounded-full" />

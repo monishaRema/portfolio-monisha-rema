@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FiHeart, FiGithub, FiLinkedin, FiTwitter, FiMail } from 'react-icons/fi';
+import { FiGithub, FiLinkedin, FiTwitter, FiMail } from 'react-icons/fi';
 import { FaLocationArrow, FaPhoneAlt } from 'react-icons/fa';
-
+import Logo from "../../../assets/Logo.png"
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
@@ -32,7 +32,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className='max-w-xs mx-auto md:mx-0 text-center md:text-left'
           >
-            <h3 className="text-2xl font-bold text-blue-400 mb-4">Monisha Rema</h3>
+            <a className="block" href="#home"><img src={Logo} alt="logo" className='max-w-28'></img></a>
             <p className="text-gray-300 mb-4 leading-relaxed">
               Junior MERN Stack Developer passionate about building clean, user-focused web apps that actually make an impact.
             </p>
@@ -46,7 +46,7 @@ const Footer = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  viewport={{ once: true }}
+                  viewport={{ once: false }}
                   whileHover={{ scale: 1.2, rotate: 5 }}
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-300 hover:bg-blue-600 hover:text-white transition-all duration-200"
                   aria-label={social.label}

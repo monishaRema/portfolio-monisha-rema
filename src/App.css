@@ -9,10 +9,39 @@ html{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  transition: background-position 2s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: background-position 5s cubic-bezier(0.25,0.46,0.45,0.94);
 }
 
 .project-box:hover .project-image-box,
 .project-image-box:focus-within {
   background-position: bottom center;
+}
+
+@keyframes waving-hand {
+  0% { transform: rotate(0deg);}
+  10% { transform: rotate(14deg);}
+  20% { transform: rotate(-8deg);}
+  30% { transform: rotate(14deg);}
+  40% { transform: rotate(-4deg);}
+  50% { transform: rotate(10deg);}
+  60% { transform: rotate(0deg);}
+  100% { transform: rotate(0deg);}
+}
+.animate-waving-hand {
+  display: inline-block;
+  animation: waving-hand 1.5s infinite;
+  transform-origin: 70% 70%;
+}
+@layer utilities {
+  .animate-bounce-slow {
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0);}
+    50% { transform: translateY(-8px);}
+  }
+}
+
+.btn, a, button{
+  transition: all 0.3s ease-in-out;
 }

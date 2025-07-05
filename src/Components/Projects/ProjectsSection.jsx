@@ -74,7 +74,7 @@ const Project = ({ project, index }) => (
     variants={variants}
     initial="hidden"
     whileInView="visible"
-    viewport={{ once: true, amount: 0.2 }}
+    viewport={{ once: false, amount: 0.2 }}
   >
     {/* Image Section */}
     <div className="flex-1 w-full">
@@ -176,7 +176,7 @@ const ProjectsSection = () => (
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
         Projects
       </motion.h2>
@@ -185,7 +185,7 @@ const ProjectsSection = () => (
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
-        viewport={{ once: true }}
+        viewport={{ once: false }}
       >
          Explore a showcase of real-world projects.
   Each project reflects my commitment to user experience and building web apps that actually matter.

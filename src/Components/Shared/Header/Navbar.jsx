@@ -7,16 +7,22 @@ import {
   FaTools,
   FaProjectDiagram,
   FaEnvelope,
-  FaDownload,
+  FaEye,
 } from "react-icons/fa";
+
 import { motion, AnimatePresence } from "framer-motion";
+import Logo from "../../../assets/Logo.png";
 
 // Nav items with icon and label
 const navItems = [
   { name: "home", label: "Home", icon: <FaHome className="mr-2" /> },
   { name: "about", label: "About", icon: <FaUser className="mr-2" /> },
   { name: "skills", label: "Skills", icon: <FaTools className="mr-2" /> },
-  { name: "projects", label: "Projects", icon: <FaProjectDiagram className="mr-2" /> },
+  {
+    name: "projects",
+    label: "Projects",
+    icon: <FaProjectDiagram className="mr-2" />,
+  },
   { name: "contact", label: "Contact", icon: <FaEnvelope className="mr-2" /> },
 ];
 
@@ -32,7 +38,11 @@ const containerVariants = {
 };
 const itemVariants = {
   hidden: { opacity: 0, y: -18 },
-  visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 500, damping: 40 } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { type: "spring", stiffness: 500, damping: 40 },
+  },
 };
 
 const Navbar = ({ isMenuOpen, setIsMenuOpen, activeSection }) => {
@@ -47,14 +57,16 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, activeSection }) => {
       >
         {/* Logo/Name */}
         <motion.div className="flex items-center" variants={itemVariants}>
-          <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            MR
-          </span>
-          <span className="ml-2 font-semibold text-gray-300">Monisha Rema</span>
+          <a href="#home">
+            <img src={Logo} alt="Logo" className="max-w-22" />
+          </a>
         </motion.div>
 
         {/* Desktop Navigation */}
-        <motion.div className="hidden md:flex items-center space-x-4" variants={containerVariants}>
+        <motion.div
+          className="hidden md:flex items-center space-x-4"
+          variants={containerVariants}
+        >
           {navItems.map((item) => (
             <motion.a
               key={item.name}
@@ -74,19 +86,21 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, activeSection }) => {
           ))}
           {/* Download Resume Button */}
           <motion.a
-            href="/resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="https://drive.google.com/file/d/1OTqtY_pk7Rl4DjizQhaJS02398GTmrvv/view?usp=sharing"
+            download
             variants={itemVariants}
             className="ml-2 flex items-center gap-2 px-4 py-2 rounded-lg border border-cyan-500 text-cyan-500 font-semibold bg-transparent hover:bg-cyan-500 hover:text-white transition shadow-sm"
           >
-            <FaDownload />
-            Download Resume
+            <FaEye />
+            Resume
           </motion.a>
         </motion.div>
 
         {/* Mobile Menu Button */}
-        <motion.div className="md:hidden flex items-center" variants={itemVariants}>
+        <motion.div
+          className="md:hidden flex items-center"
+          variants={itemVariants}
+        >
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="p-2 rounded-lg bg-gray-800 text-gray-300 hover:bg-gray-700 transition"
@@ -133,14 +147,13 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, activeSection }) => {
               ))}
               {/* Download Resume Button (Mobile) */}
               <motion.a
-                href="/resume.pdf"
+                href="https://drive.google.com/file/d/1OTqtY_pk7Rl4DjizQhaJS02398GTmrvv/view?usp=sharing"
                 target="_blank"
-                rel="noopener noreferrer"
                 variants={itemVariants}
                 className="mt-4 flex items-center gap-2 px-4 py-2 rounded-lg border border-cyan-500 text-cyan-500 font-semibold bg-transparent hover:bg-cyan-500 hover:text-white transition shadow-sm justify-center"
               >
-                <FaDownload />
-                Download Resume
+                <FaEye />
+                Resume
               </motion.a>
             </motion.div>
           </motion.div>

@@ -1,6 +1,7 @@
 import React from "react";
-import { FaDownload, FaExternalLinkAlt } from "react-icons/fa";
+import { FaDownload, FaExternalLinkAlt, FaEye, FaRegHandPaper } from "react-icons/fa";
 import { motion } from "framer-motion";
+import AnimatedKeyboard from "./AnimatedKeyboard";
 
 const parentVariant = {
   hidden: {},
@@ -37,8 +38,17 @@ const Hero = () => (
         variants={parentVariant}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.6 }}
+        viewport={{ once: false, amount: 0.6 }}
       >
+        <motion.p
+          className="text-base md:text-lg mb-2"
+          variants={fadeUpVariant}
+        >
+          <span className="inline-flex items-center gap-2 bg-gradient-to-r from-[#2496e225] to-[#4b4b502d] rounded-4xl px-5 py-1 border border-[#ffffff0a] text-gray-400 backdrop-blur-lg shadow-md font-medium text-base">
+            <FaRegHandPaper className="text-blue-400 animate-waving-hand" />
+            Hi! This is
+          </span>
+        </motion.p>
         {/* Name */}
         <motion.h1
           className="text-4xl md:text-6xl font-bold mb-4"
@@ -55,21 +65,14 @@ const Hero = () => (
         >
           Junior MERN Stack Developer
         </motion.h2>
-        {/* Tech stack */}
+
         <motion.p
-          className="text-base md:text-lg mb-4 max-w-xl mx-auto text-gray-300"
+          className="text-base md:text-lg mb-5 max-w-2xl mx-auto text-gray-400 font-light"
           variants={fadeUpVariant}
         >
-          &#123; JavaScript, React, Node.js, MongoDB, Express.js, Tailwind CSS, Firebase &#125;
-        </motion.p>
-        {/* Tagline */}
-        <motion.p
-          className="text-sm md:text-base mb-8 max-w-2xl mx-auto text-gray-400 font-light"
-          variants={fadeUpVariant}
-        >
-          Building modern, scalable web apps that blend clean UI, smooth interactions, and real-world functionality.
-          <br />
-          I love learning new tech and shipping features that actually help users and teams.
+          Building modern, scalable web apps that blend clean UI, smooth
+          interactions, and real-world functionality. I love learning new tech
+          and shipping features that actually help users and teams.
         </motion.p>
         {/* CTA Buttons */}
         <motion.div
@@ -86,14 +89,15 @@ const Hero = () => (
             <FaExternalLinkAlt size={18} />
           </a>
           <a
-            href="/MonishaRema_Resume.pdf"
-            download
+            href="https://drive.google.com/file/d/1OTqtY_pk7Rl4DjizQhaJS02398GTmrvv/view?usp=sharing"
+       
+            target="_blank"
             className="border border-cyan-500 text-cyan-400 hover:bg-cyan-600 hover:text-white px-8 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center space-x-2 shadow focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400"
             tabIndex={0}
             aria-label="Download CV"
           >
-            <FaDownload size={18} />
-            <span>Download CV</span>
+            <FaEye size={22} />
+            <span>Resume</span>
           </a>
         </motion.div>
 
@@ -102,37 +106,7 @@ const Hero = () => (
           className="mt-16 relative flex justify-center"
           variants={fadeUpVariant}
         >
-          <div className="inline-block p-8 rounded-2xl bg-[#1c2333] shadow-2xl">
-            <div className="flex items-center justify-center space-x-8">
-              {/* Accessible Keyboard */}
-              <div
-                className="p-4 rounded-lg bg-[#222a3b] outline-none focus:ring-4 focus:ring-cyan-400"
-                role="group"
-                tabIndex={0}
-                aria-label="Keyboard illustration"
-              >
-                <div className="grid grid-cols-10 gap-1">
-                  {Array.from({ length: 30 }).map((_, i) => (
-                    <div
-                      key={i}
-                      className="w-3 h-3 rounded bg-[#344055] focus:bg-cyan-400"
-                      tabIndex={-1}
-                      role="presentation"
-                      aria-hidden="true"
-                    />
-                  ))}
-                </div>
-              </div>
-              {/* Accessible Mouse */}
-              <div
-                className="w-12 h-20 rounded-full bg-[#344055] flex flex-col justify-start outline-none focus:ring-4 focus:ring-blue-400"
-                tabIndex={0}
-                aria-label="Mouse illustration"
-              >
-                <div className="w-2 h-8 rotate-180 rounded-full mx-auto mt-2 bg-gradient-to-b from-blue-500 to-green-800" />
-              </div>
-            </div>
-          </div>
+          <AnimatedKeyboard></AnimatedKeyboard>
         </motion.div>
       </motion.div>
     </div>
