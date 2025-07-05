@@ -32,7 +32,7 @@ const Footer = () => {
             viewport={{ once: true }}
             className='max-w-xs mx-auto md:mx-0 text-center md:text-left'
           >
-            <a className="block" href="#home"><img src={Logo} alt="logo" className='max-w-28'></img></a>
+            <a className="block" href="#home"><img src={Logo} alt="logo" className='max-w-28 mx-auto md:mx-0'></img></a>
             <p className="text-gray-300 mb-4 leading-relaxed">
               Junior MERN Stack Developer passionate about building clean, user-focused web apps that actually make an impact.
             </p>

@@ -47,10 +47,10 @@ const itemVariants = {
 
 const Navbar = ({ isMenuOpen, setIsMenuOpen, activeSection }) => {
   return (
-    <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-gray-950/95 backdrop-blur-sm border-b border-gray-800">
+    <nav className="fixed top-0 w-full z-50 transition-all duration-300 bg-gray-950/50 backdrop-blur-sm">
       {/* Top bar */}
       <motion.div
-        className="container mx-auto px-5 flex items-center justify-between h-16"
+        className="container mx-auto px-5 flex items-center justify-between h-19"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
@@ -87,7 +87,7 @@ const Navbar = ({ isMenuOpen, setIsMenuOpen, activeSection }) => {
           {/* Download Resume Button */}
           <motion.a
             href="https://drive.google.com/file/d/1OTqtY_pk7Rl4DjizQhaJS02398GTmrvv/view?usp=sharing"
-            download
+            target="_blank"
             variants={itemVariants}
             className="ml-2 flex items-center gap-2 px-4 py-2 rounded-lg border border-cyan-500 text-cyan-500 font-semibold bg-transparent hover:bg-cyan-500 hover:text-white transition shadow-sm"
           >

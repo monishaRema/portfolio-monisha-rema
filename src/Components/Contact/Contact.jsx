@@ -149,7 +149,7 @@ const Contact = () => {
                   Let’s Connect
                 </h2>
                 <p className="text-center lg:text-start text-gray-300 mb-5 max-w-sm mx-auto lg:mx-0">
-                  Reach out for collaboration, opportunities, or just to say hi.<br />
+                  Reach out for collaboration, opportunities, or just to say hi.
                   I respond quickly to all messages.
                 </p>
                 <form

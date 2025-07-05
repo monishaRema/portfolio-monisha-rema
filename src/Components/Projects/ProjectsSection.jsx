@@ -129,7 +129,7 @@ const Project = ({ project, index }) => (
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-400 transition flex items-center gap-2 text-[#b5c6e0]"
+            className="hover:text-cyan-400 transition flex items-center gap-2 text-[#b5c6e0]"
           >
             <FaGithub /> <span>GitHub</span>
           </a>
@@ -139,7 +139,7 @@ const Project = ({ project, index }) => (
               href={project.github.frontend}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-400 transition flex items-center gap-2 text-[#b5c6e0]"
+              className="hover:text-cyan-400 transition flex items-center gap-2 text-[#b5c6e0]"
             >
               <FaGithub /> <span>Frontend</span>
             </a>
@@ -147,7 +147,7 @@ const Project = ({ project, index }) => (
               href={project.github.backend}
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-400 transition flex items-center gap-2 text-[#b5c6e0]"
+              className="hover:text-cyan-400 transition flex items-center gap-2 text-[#b5c6e0]"
             >
               <FaGithub /> <span>Backend</span>
             </a>
@@ -158,7 +158,7 @@ const Project = ({ project, index }) => (
             href={project.live}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-400 transition flex items-center gap-2 text-[#b5c6e0]"
+            className="hover:text-cyan-400 transition flex items-center gap-2 text-[#b5c6e0]"
           >
             <FaExternalLinkAlt /> <span>Live</span>
           </a>
