@@ -1,32 +1,48 @@
 const projects = [
   {
-    title: "Planto",
-    image: "https://i.ibb.co/20VbwG94/Planto.png",
-    tagline: "Your personal plant care assistant.",
+    title: "TazaDeal",
+    image: "https://i.ibb.co/5WqMHjgw/markuphero-9de-Msgqtl6flu-WRkq-RA5.png",
+    tagline: "Your go-to platform for real-time market prices and local deals.",
     description:
-      "A full-stack, mobile-responsive plant management app. Log and track watering, fertilizing, and health for your houseplants. Add photos, monitor growth, and get reminders—everything is organized, visual, and user-authenticated.",
+      "TazaDeal is a multi-role eCommerce platform built for transparency, trust, and local engagement. Buyers can explore real-time product prices from local markets, vendors can manage their listings and pricing, and admins maintain quality control — all in a smooth, interactive UI.",
     features: [
-      "Add/manage plants with photos, nicknames, and preferences",
-      "Track care tasks: watering, fertilizing, pruning, repotting",
-      "Photo journaling and health notes",
-      "Personalized reminders and task logging",
-      "User authentication (Firebase)",
-      "Mobile-first, fully responsive design",
-      "SEO optimized (React Helmet)"
+      "🔍 Explore daily product prices from verified local vendors",
+      "👤 Role-based access control (Admin, Vendor, Buyer)",
+      "📈 Price trend visualization and historical comparisons",
+      "💬 Review system with buyer feedback and vendor replies",
+      "📋 Add products to a personalized Watchlist",
+      "📦 Vendor dashboard to manage inventory, earnings, and orders",
+      "⚙️ Admin panel for user/product moderation and approval workflow",
+      "💳 Stripe-integrated secure checkout with stock validation",
+      "📅 Filter products by date and market",
+      "🧠 Smooth UI animations with Framer Motion",
+      "🔐 Secure login with Firebase Auth & custom JWT auth",
+      "📱 Fully responsive, real-time and accessible design",
     ],
     tech: [
-      "React", "React Router", "Tailwind CSS", "DaisyUI", "Framer Motion",
-      "React Toastify", "SweetAlert2", "React Tooltip", "date-fns"
+      "React",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Framer Motion",
+      "Recharts",
+      "React Router",
+      "React Toastify",
+      "SweetAlert2",
+      "React Tooltip",
     ],
     backend: [
-      "Node.js", "Express.js", "MongoDB", "JWT", "Firebase"
+      "Node.js",
+      "Express.js",
+      "CORS",
+      "MongoDB (Native Driver)",
+      "Firebase Auth",
+      "JWT",
     ],
-    github:{
-          frontend:"https://github.com/monishaRema/planto",
-          backend: "https://github.com/monishaRema/Planto-server"
-
+    github: {
+      frontend: "https://github.com/monishaRema/TazaDeal",
+      backend: "https://github.com/monishaRema/TazaDeal-Server",
     },
-    live: "https://green-3f4f3.web.app/"
+    live: "https://tazadeal-2c294.web.app/",
   },
   {
     title: "Book Case",
@@ -41,21 +57,68 @@ const projects = [
       "Visualize habits with progress charts",
       "Comprehensive, live dashboard",
       "Secure login (Firebase Auth, JWT)",
-      "Fully responsive, real-time UI"
+      "Fully responsive, real-time UI",
     ],
     tech: [
-      "React", "Tailwind CSS", "DaisyUI", "Framer Motion", "Recharts", "React Router",
-      "React Toastify", "SweetAlert2", "Lottie React", "React Tooltip"
+      "React",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Framer Motion",
+      "Recharts",
+      "React Router",
+      "React Toastify",
+      "SweetAlert2",
+      "Lottie React",
+      "React Tooltip",
     ],
     backend: [
-      "Node.js", "Express.js", "CORS", "MongoDB", "Firebase Auth", "JWT"
+      "Node.js",
+      "Express.js",
+      "CORS",
+      "MongoDB",
+      "Firebase Auth",
+      "JWT",
     ],
     github: {
       frontend: "https://github.com/monishaRema/bookcase-client",
-      backend: "https://github.com/monishaRema/Bookcase-Server"
+      backend: "https://github.com/monishaRema/Bookcase-Server",
     },
-    live: "https://book-case-92d50.web.app/"
+    live: "https://book-case-92d50.web.app/",
   },
+  {
+    title: "Planto",
+    image: "https://i.ibb.co/20VbwG94/Planto.png",
+    tagline: "Your personal plant care assistant.",
+    description:
+      "A full-stack, mobile-responsive plant management app. Log and track watering, fertilizing, and health for your houseplants. Add photos, monitor growth, and get reminders—everything is organized, visual, and user-authenticated.",
+    features: [
+      "Add/manage plants with photos, nicknames, and preferences",
+      "Track care tasks: watering, fertilizing, pruning, repotting",
+      "Photo journaling and health notes",
+      "Personalized reminders and task logging",
+      "User authentication (Firebase)",
+      "Mobile-first, fully responsive design",
+      "SEO optimized (React Helmet)",
+    ],
+    tech: [
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "DaisyUI",
+      "Framer Motion",
+      "React Toastify",
+      "SweetAlert2",
+      "React Tooltip",
+      "date-fns",
+    ],
+    backend: ["Node.js", "Express.js", "MongoDB", "JWT", "Firebase"],
+    github: {
+      frontend: "https://github.com/monishaRema/planto",
+      backend: "https://github.com/monishaRema/Planto-server",
+    },
+    live: "https://green-3f4f3.web.app/",
+  },
+
   {
     title: "JobTrack",
     image: "https://i.ibb.co/qMgtNJTP/Jobtrack.png",
@@ -68,16 +131,20 @@ const projects = [
       "Direct links to official job pages",
       "Responsive, mobile-first design",
       "GSAP-powered UI animations",
-      "Instant feedback with React Toastify"
+      "Instant feedback with React Toastify",
     ],
     tech: [
-      "React", "React Router", "Tailwind CSS", "GSAP", "React Toastify", "date-fns", "Helmet React"
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "GSAP",
+      "React Toastify",
+      "date-fns",
+      "Helmet React",
     ],
-    backend: [
-      "Firebase (Auth & Hosting)"
-    ],
+    backend: ["Firebase (Auth & Hosting)"],
     github: "https://github.com/monishaRema/job-track",
-    live: "https://jobtrack-rema.surge.sh/"
+    live: "https://jobtrack-rema.surge.sh/",
   },
   {
     title: "Phudu - Medical Appointment Booking",
@@ -92,15 +159,21 @@ const projects = [
       "Visual charts of appointment stats",
       "Instant toasts and alerts",
       "Light/dark mode, mobile-first design",
-      "Data persists via local storage"
+      "Data persists via local storage",
     ],
     tech: [
-      "React", "React Router", "Tailwind CSS", "DaisyUI", "React Icons", "Chart.js", "Local Storage"
+      "React",
+      "React Router",
+      "Tailwind CSS",
+      "DaisyUI",
+      "React Icons",
+      "Chart.js",
+      "Local Storage",
     ],
     backend: [],
     github: "https://github.com/monishaRema/Phudu",
-    live: "https://fanatical-bun.surge.sh/"
-  }
+    live: "https://fanatical-bun.surge.sh/",
+  },
 ];
 
 export default projects;

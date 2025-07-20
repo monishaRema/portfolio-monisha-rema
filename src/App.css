@@ -1,7 +1,6 @@
-html{
+html {
   scroll-behavior: smooth;
 }
-
 
 .project-image-box {
   width: 100%;
@@ -9,7 +8,7 @@ html{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center;
-  transition: background-position 5s cubic-bezier(0.25,0.46,0.45,0.94);
+  transition: background-position 8s cubic-bezier(0.95, 0.76, 0.55, 0.44);
 }
 
 .project-box:hover .project-image-box,
@@ -18,14 +17,30 @@ html{
 }
 
 @keyframes waving-hand {
-  0% { transform: rotate(0deg);}
-  10% { transform: rotate(14deg);}
-  20% { transform: rotate(-8deg);}
-  30% { transform: rotate(14deg);}
-  40% { transform: rotate(-4deg);}
-  50% { transform: rotate(10deg);}
-  60% { transform: rotate(0deg);}
-  100% { transform: rotate(0deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 .animate-waving-hand {
   display: inline-block;
@@ -37,11 +52,40 @@ html{
     animation: bounce 2s infinite;
   }
   @keyframes bounce {
-    0%, 100% { transform: translateY(0);}
-    50% { transform: translateY(-8px);}
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
   }
 }
 
-.btn, a, button{
+.btn,
+a,
+button {
   transition: all 0.3s ease-in-out;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  top: -27%;
+  left: -28%;
+  width: 180%;
+  height: 180%;
+  border-radius: 0;
+  background: conic-gradient(from 0deg, #59d4e4,#398b96, transparent, transparent);
+  z-index: 1;
+  animation: rotateBorder 8s linear infinite;
+}
+
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

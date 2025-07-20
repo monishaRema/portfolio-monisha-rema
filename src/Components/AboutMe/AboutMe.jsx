@@ -10,19 +10,17 @@ const AboutMe = () => (
       <div className="flex flex-col md:flex-row items-center justify-center gap-12">
         {/* Left: Profile Image */}
         <motion.div
-          className="min-w-[300px] md:min-w-[350px] rounded-2xl overflow-hidden border-8 border-[#272870b6] shadow-2xl bg-[#181f2c]"
+          className="animated-border relative min-w-[300px] md:min-w-[350px] rounded-2xl overflow-hidden p-1 bg-[#27445f80]"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: false }}
-          style={{
-            borderRadius: "69% 31% 46% 54% / 57% 63% 37% 43% ",
-          }}
+          
         >
           <img
-            src="https://avatars.githubusercontent.com/u/188803446?s=400&u=8584af5a2786ee6db4d4d16678b95fa00111fcae&v=4" // UPDATE to your photo path!
+            src="https://avatars.githubusercontent.com/u/188803446?s=400&u=8584af5a2786ee6db4d4d16678b95fa00111fcae&v=4"
             alt="Monisha Rema"
-            className="w-full h-[410px] object-cover"
+            className="w-full h-[410px] object-cover relative z-10 rounded-2xl"
             loading="lazy"
           />
         </motion.div>
