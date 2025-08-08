@@ -63,7 +63,7 @@ const Hero = () => (
           className="text-xl md:text-2xl mb-4 text-blue-400 font-semibold tracking-wide"
           variants={fadeUpVariant}
         >
-          MERN Stack Developer
+          Full Stack Developer
         </motion.h2>
 
         <motion.p

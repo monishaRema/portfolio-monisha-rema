@@ -27,6 +27,9 @@ import {
   SiNotion,
   SiVercel,
   SiNetlify,
+  SiTypescript,
+  SiPrisma,
+  SiPostgresql,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -44,6 +47,7 @@ const skillGroups = [
         icon: <SiTailwindcss className="text-sky-400" />,
       },
       { name: "JavaScript", icon: <FaJsSquare className="text-yellow-400" /> },
+      { name: "TypeScript", icon: <SiTypescript className="text-blue-500" /> },
       { name: "React.js", icon: <FaReact className="text-blue-300" /> },
       {
         name: "React Router",
@@ -69,6 +73,8 @@ const skillGroups = [
       { name: "Node.js", icon: <FaNodeJs className="text-green-400" /> },
       { name: "Express.js", icon: <SiExpress className="text-white" /> },
       { name: "MongoDB", icon: <SiMongodb className="text-green-500" /> },
+      { name: "PostgreSQL", icon: <SiPostgresql className="text-blue-600" /> },
+      { name: "Prisma", icon: <SiPrisma className="text-black" /> },
       { name: "JWT", icon: <SiJsonwebtokens className="text-pink-500" /> },
       { name: "Firebase", icon: <SiFirebase className="text-yellow-400" /> },
     ],
@@ -116,13 +122,13 @@ const Skills = () => (
       </motion.h2>
       {/* Animated Section Paragraph */}
       <motion.p
-       className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center mb-16"
+        className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto text-center mb-16"
         variants={groupBoxVariant}
         initial="hidden"
         whileInView="visible"
       >
-      These are the core technologies I use to build reliable, high-impact web apps.
-  Always learning, always leveling up.
+        These are the core technologies I use to build reliable, high-impact web
+        apps. Always learning, always leveling up.
       </motion.p>
 
       {/* Animate each group card */}

@@ -46,10 +46,11 @@ const AboutMe = () => (
           <p className="text-gray-200 mb-6 text-lg leading-relaxed">
             A passionate{" "}
             <span className="text-blue-400 font-semibold">
-              MERN Stack Developer
+              Full Stack Developer
             </span>{" "}
-            focused on building clean, efficient, and user-centered web apps
-            that deliver real value and seamless experiences.
+            Focused on building clean, efficient, and user-centered web apps
+            that deliver genuine impact and memorable experiences.
+          
           </p>
 
           {/* 3 key points */}
@@ -60,7 +61,7 @@ const AboutMe = () => (
               </span>
               <span className="text-gray-300">
                 <strong className="text-blue-300">Hands-on experience</strong>{" "}
-                in React, Node.js, MongoDB, and Express, building real-world
+                in React, Node.js, MongoDB, and Express, PostgreSql, Prisma, Typescript, building real-world
                 projects from scratch and solving real problems.
               </span>
             </div>
